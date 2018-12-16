@@ -1,0 +1,42 @@
+﻿@model SimulazioneMVC.Model.Presentazioni
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Presentazioni</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titolo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Titolo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataInizio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataInizio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataFine)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataFine)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Livello)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Livello)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
